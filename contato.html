@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ford - Contato</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background-color: #fff;">
+  <header>
+    <div class="header-container">
+      <a href="index.html"><img src="img/logo-ford-256.png" alt="Logo Ford" class="logo" /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lancamento.html">Lançamento</a></li>
+          <li><a href="contato.html" class="active">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contato">
+      <div class="contato-container">
+        <img src="img/xls 2.2 diesel.jpg" alt="Ford Ranger Vermelha" class="imagem-contato" />
+
+        <form class="form-contato">
+          <h2>Sobre Você</h2>
+          <input type="text" name="nome" placeholder="Nome" required>
+          <input type="email" name="email" placeholder="E-mail" required>
+          <input type="tel" name="telefone" placeholder="Telefone" required>
+          <select name="contato-preferencia" required>
+            <option value="" hidden>Tipo do contato:</option>
+            <option value="telefone">Elogio</option>
+            <option value="email">Reclamação</option>
+            <option value="whatsapp">Solicitação</option>
+          </select>
+          <input type="text" name="txtInput" placeholder="Texto" required>
+          <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="redes">
+        <span>Redes Sociais:</span>
+        <a href="https://www.facebook.com/FordBrasil/?locale=pt_BR"><img src="img/facebook-50.png" alt="Facebook" /></a>
+        <a href="https://www.instagram.com/fordbrasil/"><img src="img/instagram-logo-50.png" alt="Instagram" /></a>
+        <a href="https://www.youtube.com/fordbrasil"><img src="img/youtube-squared-50.png" alt="YouTube" /></a>
+      </div>
+      <img src="img/ford-96.png" alt="Logo Ford Rodapé" class="logo-footer" />
+    </div>
+  </footer>
+</body>
+</html>
