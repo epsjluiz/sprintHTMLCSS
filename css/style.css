@@ -65,7 +65,8 @@ main {
 }
 
 main {
-  min-height: 1800px;
+  min-height: unset;
+  padding-bottom: unset;
 }
 
 .form-contato {
@@ -111,6 +112,7 @@ main {
 
 .destaque iframe,
 .destaque video {
+  padding-top: 10px;
   width: 100%;
   max-width: 900px;
   aspect-ratio: 16 / 9;
@@ -176,8 +178,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 120px;
+  margin-top: unset;
+  margin-bottom: unset;
   padding-top: 10px; 
 }
 
@@ -391,7 +393,13 @@ footer {
   z-index: 10;
   transition: transform 0.3s;
 }
-
+.footer-top{
+  position: relative;
+  top: -20px;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+}
 .footer-container {
   max-width: 1100px;
   margin: 0 auto;
@@ -425,7 +433,6 @@ footer {
   height: 40px;
 }
 
-/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 900px) {
   .modelos-grid {
     flex-direction: column;
@@ -467,7 +474,6 @@ footer {
   }
 }
 
-/* Para index.html e contato.html, restaure o espaçamento padrão das seções principais */
 .index-main,
 .contato-main,
 .destaque,
@@ -477,4 +483,15 @@ footer {
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.carro{
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.footer-contato {
+  position: relative, bottom;
 }
